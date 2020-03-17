@@ -41,7 +41,7 @@ def addSync(numbers, threads):
 def simpleAdd(numbers):
     print('\nSem utilizar paralelismo')
     start = timer()
-    r = add(range(100000000))
+    r = add(numbers)
     time = timer() - start
     print("Resultado: {}".format(r))
     print("Tempo percorrido: {}s".format(time))
